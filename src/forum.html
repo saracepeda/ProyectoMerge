@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hobby Consolas - ¡La revista de videojuegos número uno!</title>
+    <title>Foros - Hobby Consolas</title>
     <!-- Importar Materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Estilos personalizados -->
@@ -17,27 +17,30 @@
             color: #ffffff; /* Cambiar el color del texto de la barra de navegación */
         }
         /* Estilos adicionales */
-        .hero-section {
-            padding: 100px 0;
-            text-align: center;
-            color: #7e57c2;
+        .forum-section {
+            padding: 50px 0;
+            color: #000000;
         }
-        .hero-section h1 {
-            font-size: 3rem;
+        .forum-section h2 {
+            font-size: 2rem;
         }
-        .hero-section p {
-            font-size: 1.5rem;
+        .forum-section ul {
+            list-style-type: decimal;
+        }
+        .btn-forums {
+            background-color: #7e57c2;
+            color: #ffffff;
         }
     </style>
 </head>
-<body>
+<body> <!-- Agregar la clase para el esquema de colores morados -->
 
 <!-- Navbar -->
 <nav>
     <div class="nav-wrapper purple-theme">
         <a href="#" class="brand-logo">Hobby Consolas</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="news.html">Noticias</a></li>
+            <li><a href="#">Noticias</a></li>
             <li><a href="#">Reseñas</a></li>
             <li><a href="#">Videos</a></li>
             <li><a href="forum.html">Foros</a></li>
@@ -47,13 +50,25 @@
 </nav>
 
 <!-- Contenido principal -->
-<article class="container">
-    <!-- Sección de héroe -->
-    <section class="hero-section">
-        <h1>¡Bienvenido a Hobby Consolas!</h1>
-        <p>La revista de videojuegos número uno en español. Encuentra noticias, reseñas, videos y más.</p>
+<div class="container">
+    <!-- Sección de foros -->
+    <section class="forum-section">
+        <h2>Normas básicas de comportamiento en los foros</h2>
+        <ul>
+            <li>1. Respetar a todos los miembros de la comunidad.</li>
+            <li>2. Evitar el lenguaje ofensivo o irrespetuoso.</li>
+            <li>3. No publicar contenido inapropiado o ilegal.</li>
+            <li>4. Mantener las discusiones centradas en el tema.</li>
+            <li>5. No realizar spam o publicidad no deseada.</li>
+            <li>6. No compartir información personal de otros usuarios.</li>
+            <li>7. Seguir las indicaciones de los moderadores del foro.</li>
+            <li>8. Ser tolerante y respetuoso con las opiniones diferentes.</li>
+            <li>9. Utilizar un lenguaje claro y comprensible para todos.</li>
+            <li>10. Ayudar a mantener un ambiente amigable y colaborativo.</li>
+        </ul>
+        <a href="#" class="btn btn-forums">Ir a los foros</a>
     </section>
-</article>
+</div>
 
 <!-- Importar jQuery (necesario para algunos componentes de Materialize) -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
