@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias - Hobby Consolas</title>
+    <!-- Importar Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Estilos personalizados -->
+    <style>
+        /* Cambiar el color primario a uno basado en morado */
+        .purple-theme {
+            background-color: #7e57c2; /* Cambiar este color principal según tu preferencia */
+        }
+        /* Cambiar el color del texto en la barra de navegación */
+        .purple-theme nav ul a {
+            color: #ffffff; /* Cambiar el color del texto de la barra de navegación */
+        }
+        /* Estilos adicionales */
+        .news-article {
+            margin-bottom: 30px;
+        }
+        .news-article h2 {
+            font-size: 2rem;
+        }
+        .news-article p {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <div class="nav-wrapper purple-theme">
+        <a href="#" class="brand-logo">Hobby Consolas</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Reseñas</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Foros</a></li>
+            <li><a href="#">Suscripciones</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Contenido principal -->
+<div class="container">
+    <!-- Sección de noticias -->
+    <section class="news-section">
+        <div class="row">
+            <div class="col s12">
+                <div class="news-article">
+                    <h2>Próximo lanzamiento de "Cyberpunk 2078"</h2>
+                    <p>La desarrolladora CD Projekt Red anuncia la fecha de lanzamiento oficial de su tan esperado juego "Cyberpunk 2078". Los fanáticos están emocionados por esta noticia y esperan ansiosamente el día del lanzamiento.</p>
+                </div>
+            </div>
+            <div class="col s12">
+                <div class="news-article">
+                    <h2>Anunciado "The Last of Us: Part III"</h2>
+                    <p>Naughty Dog revela oficialmente la tercera entrega de su aclamada serie "The Last of Us". Los detalles son escasos por el momento, pero los aficionados están emocionados de regresar al mundo post-apocalíptico de Joel y Ellie.</p>
+                </div>
+            </div>
+            <div class="col s12">
+                <div class="news-article">
+                    <h2>Nintendo anuncia nueva consola portátil</h2>
+                    <p>Nintendo sorprende a todos al anunciar una nueva consola portátil llamada "Nintendo Pocket". La compañía promete una experiencia de juego innovadora y portabilidad sin igual.</p>
+                </div>
+            </div>
+            <div class="col s12">
+                <div class="news-article">
+                    <h2>Se filtran detalles de "Elden Ring"</h2>
+                    <p>Se han filtrado detalles emocionantes sobre el próximo juego de FromSoftware, "Elden Ring". Los rumores sugieren un vasto mundo abierto, combate desafiante y una narrativa épica desarrollada en colaboración con George R.R. Martin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Importar jQuery (necesario para algunos componentes de Materialize) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Importar Materialize JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+  // Inicializar elementos de Materialize
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+</script>
+</body>
+</html>
